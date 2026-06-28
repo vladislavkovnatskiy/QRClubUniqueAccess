@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: docker-app-postgres-1
+    ports:
+      - '5433:5432'
+    environment:
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGRES_DB=postgres'
+
+  app:
+    build: .
+    container_name: docker-app-1
+    ports:
+      - "8085:8085"
+    depends_on:
+      - postgres
+    environment:
+      POSTGRES_HOST: docker-app-postgres-1
