@@ -25,7 +25,7 @@ public class QrCode {
     @Column(name = "qr_uuid", nullable = false, unique = true)
     private UUID qrUuid;
 
-    public QrCode(Participant participant, UUID qrUuid){
+    public QrCode(Participant participant, UUID qrUuid) {
         this.participant = participant;
         this.qrUuid = qrUuid;
     }
