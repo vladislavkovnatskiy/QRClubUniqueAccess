@@ -8,6 +8,6 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Repository
-public interface QrCodeRepository  extends JpaRepository<QrCode, Long> {
+public interface QrCodeRepository extends JpaRepository<QrCode, Long> {
     Optional<QrCode> findByQrUuid(UUID qrUuid);
 }

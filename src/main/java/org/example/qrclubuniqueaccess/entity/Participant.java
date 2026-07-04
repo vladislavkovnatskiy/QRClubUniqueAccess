@@ -27,7 +27,7 @@ public class Participant {
     @OneToOne(mappedBy = "participant", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private QrCode qrCode;
 
-    public Participant(String firstName, String lastName, String middleName){
+    public Participant(String firstName, String lastName, String middleName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
