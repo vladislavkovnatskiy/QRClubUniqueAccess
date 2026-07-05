@@ -1,4 +1,4 @@
-package org.example.qrclubuniqueaccess.castomexception;
+package org.example.qrclubuniqueaccess.exception;
 
 public class ParticipantNotFoundException extends RuntimeException {
     public ParticipantNotFoundException() {

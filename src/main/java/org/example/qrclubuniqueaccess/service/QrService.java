@@ -1,8 +1,8 @@
 package org.example.qrclubuniqueaccess.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.qrclubuniqueaccess.castomexception.ParticipantNotFoundException;
-import org.example.qrclubuniqueaccess.castomexception.QrCodeNotFoundException;
+import org.example.qrclubuniqueaccess.exception.ParticipantNotFoundException;
+import org.example.qrclubuniqueaccess.exception.QrCodeNotFoundException;
 import org.example.qrclubuniqueaccess.dto.ParticipantResponseDto;
 import org.example.qrclubuniqueaccess.mapper.ParticipantMapper;
 import org.springframework.transaction.annotation.Transactional;

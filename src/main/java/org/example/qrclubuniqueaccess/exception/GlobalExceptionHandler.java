@@ -1,4 +1,4 @@
-package org.example.qrclubuniqueaccess.castomexception;
+package org.example.qrclubuniqueaccess.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
